@@ -71,7 +71,7 @@ margin-top: 25px;
 
 header {
 width: 100%;
-background: #c5faf2;
+background: #fcd46f;
 box-shadow: 3px 3px 1px rgba(0,0,0,.05);
 padding: 15px 0;
 margin-bottom: 30px;
@@ -126,8 +126,8 @@ font-size: 18px;
 padding: 10px;
 margin-bottom: 20px;
 text-align: center;
-border: 2px solid #c5faf2;
-box-shadow: 3px 3px 0 0 #c5faf2;
+border: 2px solid #fcd46f;
+box-shadow: 3px 3px 0 0 #fcd46f;
 }
 .widget-category-list li {
 border-bottom: 1px solid #EBEBE3;
