@@ -10,55 +10,55 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    $('.nav-toggle').on('click', function(){
+    $('#menu').toggleClass('active');
+    });
+  </script>
 </head>
-<script>
-$('.nav-toggle').on('click', function(){
-  $('#menu').toggleClass('active');
-});
-</script>
 <body>
 <header>
-    <nav class="container">
+<nav class="container">
 	<div class="logo">
-        <h2>Interns / Задание 4 / Жаринова Галина</h2>
-      </div>
-         </nav>
-  </header>
-  <div class="container">
+    <h2>Interns / Задание 4 / Жаринова Галина</h2>
+  </div>
+</nav>
+</header>
+<div class="container">
   <div class="posts-list">
     <article class="post">
       <div class="container2">
-	  <h2> Конвертер ДНК -> РНК </h2>
-      <div class="post-content">
-        <p><div class="form-group">
-			<form name="formDna" method="post" onsubmit="return false">
-			<p><label for="dna">Введите цепь ДНК:</label></p>
-			<p><input type="text" name="dna" id="dna" pattern="[gtcaGTCA]{1,}" title="Используйте только буквы G, C, T, A в любом регистре" autofocus="" required=""></p>
-		</div>
-			<p> <button class="button10" type="submit" onclick="validateFormDna()">Получить РНК</button> </p>
-			</form>
-		<hr>
-	    <p>Полученная цепь РНК: <b><span style="color:#fc6d00" id="resultDna"> </span></b></p></p>
-       </div>
+    	  <h2> Конвертер ДНК -> РНК </h2>
+          <div class="post-content">
+            <p><div class="form-group">
+			      <form name="formDna" method="post" onsubmit="return false">
+			      <p><label for="dna">Введите цепь ДНК:</label></p>
+			      <p><input type="text" name="dna" id="dna" pattern="[gtcaGTCA]{1,}" title="Используйте только буквы G, C, T, A в любом регистре" autofocus="" required=""></p>
+		      </div>
+			    <p> <button class="button10" type="submit" onclick="validateFormDna()">Получить РНК</button> </p>
+			  </form>
+		    <hr>
+	      <p>Полученная цепь РНК: <b><span style="color:#fc6d00" id="resultDna"> </span></b></p></p>
+     </div>
 	   </div>
-		<div class="container2">
-		  <h2>Конвертер РНК -> ДНК</h2>
-			<div class="post-content">
+  <div class="container2">
+	  <h2>Конвертер РНК -> ДНК</h2>
+		<div class="post-content">
 			<p><div class="form-group">
-				<form name="formRna" method="post" onsubmit="return false">
-				<p><label> Введите цепь РНК:</label></p>
-				<p><input type="text" name="rna" id="rna" pattern="[cgauCGAU]{1,}" title="Используйте только буквы C, G, A, U в любом регистре" autofocus="" required=""></p>
-			</div>
-			<p><button class="button10" type="submit" onclick="validateFormRna()">Получить ДНК</button></p>
-				</form>
-			<hr>
-			<p>Полученная цепь ДНК: <b><span style="color:#fc6d00" id="resultRna"></span></b></p></p>
-         </div>
-		 </div>
-		
-    </article>
-    </div> <!-- конец div class="posts-list"-->
-  <aside>
+			<form name="formRna" method="post" onsubmit="return false">
+			<p><label> Введите цепь РНК:</label></p>
+			<p><input type="text" name="rna" id="rna" pattern="[cgauCGAU]{1,}" title="Используйте только буквы C, G, A, U в любом регистре" autofocus="" required=""></p>
+		</div>
+		<p><button class="button10" type="submit" onclick="validateFormRna()">Получить ДНК</button></p>
+		</form>
+		<hr>
+	  <p>Полученная цепь ДНК: <b><span style="color:#fc6d00" id="resultRna"></span></b></p></p>
+  </div>
+</div>
+</article>
+</div>
+<aside>
   <div class="widget">
     <h3 class="widget-title">Список функций</h3>
     <ul class="widget-category-list">
@@ -67,6 +67,7 @@ $('.nav-toggle').on('click', function(){
       <li><a href="https://gazzzolina.github.io/gazzzolina.dnaToRnanew.io/">Конвертер ДНК <-> РНК</a></li>
     </ul>
   </div>
-  </aside>
-</div> <!-- конец div class="container"-->
+</aside>
+</div> 
 </div>
+</body>
